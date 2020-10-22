@@ -1,0 +1,31 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.815)),url(../../../public/images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:120vh;
+    nav{
+        font-size: 15px;
+        
+        
+    };
+    a{
+        color: rgba(255, 255, 255, 0.788);
+        text-decoration: none;
+
+    }
+
+    a:hover{ 
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.788) ;
+        
+       
+    }
+    
+    
+    div.col-lg-3:hover{
+
+        
+        background-color:$redChef ;
+
+    }
+}
