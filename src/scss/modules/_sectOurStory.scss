@@ -1,3 +1,24 @@
 .ourStory{
     height: 100vh;
+    p{
+        font-family: "Courgette";
+        span{
+            color: $redChef
+        }
+        padding: 0%;
+        margin-bottom: 0;
+        
+    }
+    p.display-4{
+        padding: 0;
+    }
+    .lineBell{
+        margin-top: -10px;
+    }
+    .bord{
+        border: solid 2px rgba(199, 197, 197, 0.301);
+    }
+    .storylorem{
+        line-height: 1.7;
+    }
 }
