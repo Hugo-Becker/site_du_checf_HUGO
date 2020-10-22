@@ -28,4 +28,53 @@ header{
         background-color:$redChef ;
 
     }
+
+    // carousel
+
+    .carouselDiv{
+        padding-top: 100px;
+        height: 90vh;
+
+        h1{
+            font-family: "Courgette";
+            font-size: 50px;
+            word-spacing: 2;
+            .taste{
+                color: $redChef;
+            }
+        }
+    }
+
+    ol.carousel-indicators{
+        margin-top: 200px;
+        padding-top: 100px;
+    }
+
+    .carousel .carousel-indicators li {
+        width: 10px;
+       height: 10px;
+       border-radius: 100%;
+     }
+     .carousel .carousel-indicators li::before{
+         content: "";
+         width: 15px;
+         height: 15px;
+         border: solid 1px white;
+         border-radius: 100%;
+     }
+     button:focus{
+         outline: none;
+     }
+     button{
+         border-radius: 20px;
+         border: none;
+         padding: 15px 20px;
+     }
+     button.text-light{
+         background-color: $redChef;
+     }
+
+     div.mt-5.but.d-flex.justify-content-center{
+         padding-bottom: 200px;
+     }
 }

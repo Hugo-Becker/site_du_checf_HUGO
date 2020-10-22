@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Courgette";
+  src: url(../../public/fonts/Courgette/Courgette-Regular.ttf);
+}
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.815)), url(../../../public/images/banner1.jpg);
   background-size: cover;
@@ -21,6 +26,58 @@ header a:hover {
 
 header div.col-lg-3:hover {
   background-color: #B02A39;
+}
+
+header .carouselDiv {
+  padding-top: 100px;
+  height: 90vh;
+}
+
+header .carouselDiv h1 {
+  font-family: "Courgette";
+  font-size: 50px;
+  word-spacing: 2;
+}
+
+header .carouselDiv h1 .taste {
+  color: #B02A39;
+}
+
+header ol.carousel-indicators {
+  margin-top: 200px;
+  padding-top: 100px;
+}
+
+header .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+header .carousel .carousel-indicators li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 1px white;
+  border-radius: 100%;
+}
+
+header button:focus {
+  outline: none;
+}
+
+header button {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+}
+
+header button.text-light {
+  background-color: #B02A39;
+}
+
+header div.mt-5.but.d-flex.justify-content-center {
+  padding-bottom: 200px;
 }
 
 /*!
