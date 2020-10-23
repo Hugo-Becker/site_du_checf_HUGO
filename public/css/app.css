@@ -15778,10 +15778,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-body {
-  background-image: url(../../../public/images/main_bg.jpg);
-}
-
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.815)), url(../../../public/images/banner1.jpg);
   background-size: cover;
@@ -15868,6 +15864,22 @@ header div.mt-5.but.d-flex.justify-content-center {
   background-repeat: repeat-x;
 }
 
+.ourStory {
+  background-image: url(../../../public/images/main_bg.jpg);
+}
+
+.ourStory .boxbottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ourStory .boxbottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .ourStory .posrel {
   position: relative;
 }
@@ -15913,26 +15925,31 @@ header div.mt-5.but.d-flex.justify-content-center {
   margin: 0 18vw;
 }
 
-.menuList {
+.ourStory .lastbit {
+  border-left: solid 2px rgba(199, 197, 197, 0.301);
+  border-right: solid 2px rgba(199, 197, 197, 0.301);
   border-bottom: solid 2px rgba(199, 197, 197, 0.301);
+}
+
+.ourStory .menuList {
   border-left: solid 2px rgba(199, 197, 197, 0.301);
   border-right: solid 2px rgba(199, 197, 197, 0.301);
   position: relative;
 }
 
-.menuList .list {
+.ourStory .menuList div.col-3 {
+  margin: 0;
+  padding: 0;
+  border-right: solid 1px rgba(70, 70, 70, 0.479);
+}
+
+.ourStory .menuList .list-group {
   font-family: "Courgette";
   font-size: 2rem;
   color: black;
 }
 
-.menuList .list div.col-3 {
-  border-right: solid 1px rgba(199, 197, 197, 0.301);
-  margin: 0;
-  padding: 0;
-}
-
-.menuList .list a {
+.ourStory .menuList .list-group a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15949,89 +15966,77 @@ header div.mt-5.but.d-flex.justify-content-center {
   padding-top: 20px;
 }
 
-.menuList .list a i {
+.ourStory .menuList .list-group a i {
   font-size: 4rem;
 }
 
-.menuList .list a:focus {
+.ourStory .menuList .list-group a:focus {
   border-right: solid 7px #B02A39;
   border-top: solid rgba(199, 197, 197, 0.301) 1px;
 }
 
-.menuList .list #list-home-list:focus, .menuList .list #list-home-list:hover {
+.ourStory .menuList .list-group #list-home-list:focus, .ourStory .menuList .list-group #list-home-list:hover {
   border-top: solid white 1px;
   background-color: white;
 }
 
-.menuList .list #list-home-list:focus i, .menuList .list #list-home-list:hover i {
+.ourStory .menuList .list-group #list-home-list:focus i, .ourStory .menuList .list-group #list-home-list:hover i {
   color: #B02A39;
 }
 
-.menuList .list #list-profile-list:focus, .menuList .list #list-profile-list:hover {
+.ourStory .menuList .list-group #list-profile-list:focus, .ourStory .menuList .list-group #list-profile-list:hover {
   background-color: white;
 }
 
-.menuList .list #list-profile-list:focus i, .menuList .list #list-profile-list:hover i {
+.ourStory .menuList .list-group #list-profile-list:focus i, .ourStory .menuList .list-group #list-profile-list:hover i {
   color: #B02A39;
 }
 
-.menuList .list #list-messages-list:focus, .menuList .list #list-messages-list:hover {
+.ourStory .menuList .list-group #list-messages-list:focus, .ourStory .menuList .list-group #list-messages-list:hover {
   background-color: white;
 }
 
-.menuList .list #list-messages-list:focus i, .menuList .list #list-messages-list:hover i {
+.ourStory .menuList .list-group #list-messages-list:focus i, .ourStory .menuList .list-group #list-messages-list:hover i {
   color: #B02A39;
 }
 
-.menuList .list #list-settings-list:focus, .menuList .list #list-settings-list:hover {
+.ourStory .menuList .list-group #list-settings-list:focus, .ourStory .menuList .list-group #list-settings-list:hover {
   background-color: white;
 }
 
-.menuList .list #list-settings-list:focus i, .menuList .list #list-settings-list:hover i {
+.ourStory .menuList .list-group #list-settings-list:focus i, .ourStory .menuList .list-group #list-settings-list:hover i {
   color: #B02A39;
 }
 
-.menuList div.col-8 {
+.ourStory .menuList div.col-8 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
 }
 
-.menuList div.col-8 div.row.d-flex.flex-row {
+.ourStory .menuList div.col-8 div.row.d-flex.flex-row {
   flex-wrap: nowrap;
   width: 100%;
 }
 
-.menuList div.col-8 .strong {
+.ourStory .menuList div.col-8 .strong {
   font-weight: bold;
 }
 
-.menuList div.col-8 .prix {
+.ourStory .menuList div.col-8 .prix {
   background-color: rgba(122, 122, 122, 0.342);
   width: 8vw;
   color: #B02A39;
 }
 
-.menuList div.col-8 img {
+.ourStory .menuList div.col-8 img {
   border: solid rgba(197, 197, 197, 0.678) 5px;
   border-radius: 50%;
   width: 120px;
 }
 
-.menuList div.col-8 .dash {
-  border-bottom: dashed rgba(199, 197, 197, 0.301) 1px;
+.ourStory .menuList div.col-8 .dash {
+  border-bottom: dashed rgba(117, 117, 117, 0.808) 1px;
   margin: 0 30px;
   padding-bottom: 20px;
   padding-top: 20px;
-}
-
-.menuList .boxbottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.menuList .boxbottomright {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
