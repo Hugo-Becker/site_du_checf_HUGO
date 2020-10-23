@@ -15868,8 +15868,20 @@ header div.mt-5.but.d-flex.justify-content-center {
   background-repeat: repeat-x;
 }
 
-.ourStory {
-  height: 85vh;
+.ourStory .posrel {
+  position: relative;
+}
+
+.ourStory .boxtopleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ourStory .boxtopright {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .ourStory p {
@@ -15898,18 +15910,26 @@ header div.mt-5.but.d-flex.justify-content-center {
 
 .ourStory .storylorem {
   line-height: 1.7;
+  margin: 0 18vw;
 }
 
 .menuList {
   border-bottom: solid 2px rgba(199, 197, 197, 0.301);
   border-left: solid 2px rgba(199, 197, 197, 0.301);
   border-right: solid 2px rgba(199, 197, 197, 0.301);
+  position: relative;
 }
 
 .menuList .list {
   font-family: "Courgette";
   font-size: 2rem;
   color: black;
+}
+
+.menuList .list div.col-3 {
+  border-right: solid 1px rgba(199, 197, 197, 0.301);
+  margin: 0;
+  padding: 0;
 }
 
 .menuList .list a {
@@ -15920,9 +15940,12 @@ header div.mt-5.but.d-flex.justify-content-center {
   line-height: 2;
   border: none;
   border-bottom: solid rgba(199, 197, 197, 0.301) 1px;
+  border-right: solid 1px rgba(199, 197, 197, 0.301);
   border-right: solid white 7px;
   background-color: white;
-  margin: 0 10px;
+  margin-left: 25px;
+  margin-right: 0;
+  width: 18vw;
   padding-top: 20px;
 }
 
@@ -15932,9 +15955,11 @@ header div.mt-5.but.d-flex.justify-content-center {
 
 .menuList .list a:focus {
   border-right: solid 7px #B02A39;
+  border-top: solid rgba(199, 197, 197, 0.301) 1px;
 }
 
 .menuList .list #list-home-list:focus, .menuList .list #list-home-list:hover {
+  border-top: solid white 1px;
   background-color: white;
 }
 
@@ -15964,4 +15989,49 @@ header div.mt-5.but.d-flex.justify-content-center {
 
 .menuList .list #list-settings-list:focus i, .menuList .list #list-settings-list:hover i {
   color: #B02A39;
+}
+
+.menuList div.col-8 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+.menuList div.col-8 div.row.d-flex.flex-row {
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.menuList div.col-8 .strong {
+  font-weight: bold;
+}
+
+.menuList div.col-8 .prix {
+  background-color: rgba(122, 122, 122, 0.342);
+  width: 8vw;
+  color: #B02A39;
+}
+
+.menuList div.col-8 img {
+  border: solid rgba(197, 197, 197, 0.678) 5px;
+  border-radius: 50%;
+  width: 120px;
+}
+
+.menuList div.col-8 .dash {
+  border-bottom: dashed rgba(199, 197, 197, 0.301) 1px;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.menuList .boxbottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.menuList .boxbottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

@@ -1,5 +1,22 @@
 .ourStory{
-    height: 85vh;
+    // height: 85vh;
+    
+    .posrel{
+        position: relative;
+
+    }
+
+    .boxtopleft{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    .boxtopright{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+   
     p{
         font-family: "Courgette";
         span{
@@ -22,5 +39,6 @@
     }
     .storylorem{
         line-height: 1.7;
+        margin: 0 18vw;
     }
 }
