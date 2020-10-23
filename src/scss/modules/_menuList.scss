@@ -1,0 +1,68 @@
+.menuList{
+
+    // height: 150vh;
+    border-bottom: solid 2px rgba(199, 197, 197, 0.301);
+    border-left: solid 2px rgba(199, 197, 197, 0.301);
+    border-right: solid 2px rgba(199, 197, 197, 0.301);
+    .list{
+        font-family: "Courgette";
+        font-size: 2rem ;
+        color: black;
+        // .list-tab{
+        //     border: none;
+        // }
+        a{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            line-height: 2;
+            border: none;
+            border-bottom:solid  rgba(199, 197, 197, 0.301) 1px; 
+            border-right: solid white 7px ;
+            background-color: white;
+            margin: 0 10px;
+            
+            i{
+                font-size: 4rem;
+            }
+            padding-top:20px;
+
+        }
+        a:focus{
+            border-right: solid 7px $redChef;
+        }
+
+        #list-home-list:focus, #list-home-list:hover{
+            
+            i{
+                color: $redChef;  
+            }
+            
+            background-color: white;
+        }
+        
+        #list-profile-list:focus, #list-profile-list:hover {
+            i{
+                color: $redChef;  
+            }
+            
+            background-color: white;
+        }
+        #list-messages-list:focus, #list-messages-list:hover{
+            i{
+                color: $redChef;  
+            }
+            
+            background-color: white;
+        }
+        #list-settings-list:focus, #list-settings-list:hover{
+            i{
+                color: $redChef;  
+            }
+           
+            background-color: white;
+        }
+        
+    }
+}

@@ -1,5 +1,5 @@
 .ourStory{
-    height: 100vh;
+    height: 85vh;
     p{
         font-family: "Courgette";
         span{
@@ -16,7 +16,9 @@
         margin-top: -10px;
     }
     .bord{
-        border: solid 2px rgba(199, 197, 197, 0.301);
+        border-top: solid 2px rgba(199, 197, 197, 0.301);
+        border-left: solid 2px rgba(199, 197, 197, 0.301);
+        border-right: solid 2px rgba(199, 197, 197, 0.301);
     }
     .storylorem{
         line-height: 1.7;

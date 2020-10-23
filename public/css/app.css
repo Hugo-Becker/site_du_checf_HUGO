@@ -15869,7 +15869,7 @@ header div.mt-5.but.d-flex.justify-content-center {
 }
 
 .ourStory {
-  height: 100vh;
+  height: 85vh;
 }
 
 .ourStory p {
@@ -15891,9 +15891,77 @@ header div.mt-5.but.d-flex.justify-content-center {
 }
 
 .ourStory .bord {
-  border: solid 2px rgba(199, 197, 197, 0.301);
+  border-top: solid 2px rgba(199, 197, 197, 0.301);
+  border-left: solid 2px rgba(199, 197, 197, 0.301);
+  border-right: solid 2px rgba(199, 197, 197, 0.301);
 }
 
 .ourStory .storylorem {
   line-height: 1.7;
+}
+
+.menuList {
+  border-bottom: solid 2px rgba(199, 197, 197, 0.301);
+  border-left: solid 2px rgba(199, 197, 197, 0.301);
+  border-right: solid 2px rgba(199, 197, 197, 0.301);
+}
+
+.menuList .list {
+  font-family: "Courgette";
+  font-size: 2rem;
+  color: black;
+}
+
+.menuList .list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  border: none;
+  border-bottom: solid rgba(199, 197, 197, 0.301) 1px;
+  border-right: solid white 7px;
+  background-color: white;
+  margin: 0 10px;
+  padding-top: 20px;
+}
+
+.menuList .list a i {
+  font-size: 4rem;
+}
+
+.menuList .list a:focus {
+  border-right: solid 7px #B02A39;
+}
+
+.menuList .list #list-home-list:focus, .menuList .list #list-home-list:hover {
+  background-color: white;
+}
+
+.menuList .list #list-home-list:focus i, .menuList .list #list-home-list:hover i {
+  color: #B02A39;
+}
+
+.menuList .list #list-profile-list:focus, .menuList .list #list-profile-list:hover {
+  background-color: white;
+}
+
+.menuList .list #list-profile-list:focus i, .menuList .list #list-profile-list:hover i {
+  color: #B02A39;
+}
+
+.menuList .list #list-messages-list:focus, .menuList .list #list-messages-list:hover {
+  background-color: white;
+}
+
+.menuList .list #list-messages-list:focus i, .menuList .list #list-messages-list:hover i {
+  color: #B02A39;
+}
+
+.menuList .list #list-settings-list:focus, .menuList .list #list-settings-list:hover {
+  background-color: white;
+}
+
+.menuList .list #list-settings-list:focus i, .menuList .list #list-settings-list:hover i {
+  color: #B02A39;
 }
