@@ -1,0 +1,17 @@
+.meetchef{
+    background-color: black;
+    
+    .ourchef{
+        font-family: "Courgette";
+        span{
+            color:$redChef;
+        }
+    }
+    .row{
+        img{
+            border-bottom: rgba(255, 255, 255, 0.555) solid 1px;
+        }
+        
+    }
+}
+

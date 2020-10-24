@@ -16040,3 +16040,19 @@ header div.mt-5.but.d-flex.justify-content-center {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
+.meetchef {
+  background-color: black;
+}
+
+.meetchef .ourchef {
+  font-family: "Courgette";
+}
+
+.meetchef .ourchef span {
+  color: #B02A39;
+}
+
+.meetchef .row img {
+  border-bottom: rgba(255, 255, 255, 0.555) solid 1px;
+}
