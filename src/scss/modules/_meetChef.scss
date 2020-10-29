@@ -1,8 +1,36 @@
+.lineDeco{
+    background-image:url(../../../public/images/decoration_line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+
 .meetchef{
-    background-color: black;
+
+
+    background-image: url(../../../public/images/team_background.jpg);
+    width: 100%;
+    margin: 0 !important; 
+    padding: 0 !important;
+    
+    .col-lg-3{
+        position: relative;
+    }
+
+    
+    
+    
     
     .ourchef{
+        p{
+            background-image:url(../../../public/images/decoration_line.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
         font-family: "Courgette";
+        padding: 0;
+
         span{
             color:$redChef;
         }
@@ -11,7 +39,50 @@
         img{
             border-bottom: rgba(255, 255, 255, 0.555) solid 1px;
         }
+
         
+    }
+    
+    .col-lg-3:focus, .col-lg-3:hover{
+        .hidenChef{
+            visibility: visible;
+        }
+
+    }
+    .hidenChef{
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        visibility: hidden;
+        color: white;
+        background-color: $redChef;
+        width: 80%;
+        border-bottom: 5px solid white;
+       
+
+        a{
+            text-decoration: none;
+            color: white;
+
+        }
+        hr{
+            height: 1px;
+            border: none;
+            background-color: white;
+            width: 80%;
+            
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: flex-start;
+            // border-top: 1px solid white;
+            li{
+                margin: 5px 20px;
+
+            }
+        }
     }
 }
 

@@ -1,9 +1,18 @@
-
 // variables
 @import "./variables";
 
 // fonts
 @import "./fonts";
+// modules
+@import "./modules/body";
+@import "./modules/header";
+@import "./modules/sectOurStory";
+@import "./modules/meetChef";
+@import "./modules/bookYourTable";
+@import "./modules/testimonials";
+@import "./modules/contact";
+@import "./modules/footer";
+
 
 
 
@@ -19,15 +28,6 @@ $fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
 
 
-// modules
-@import "./modules/body";
-@import "./modules/header";
-@import "./modules/sectOurStory";
-@import "./modules/meetChef";
-@import "./modules/bookYourTable";
-@import "./modules/testimonials";
-@import "./modules/contact";
-@import "./modules/footer";
 
 
 

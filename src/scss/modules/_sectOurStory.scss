@@ -1,7 +1,33 @@
 // our story 
 
 .ourStory{
-   
+
+    padding: 2% 0;
+
+    .bord{
+        margin: 5%;
+        padding: 4% 0;
+        // position: relative;
+
+        
+        
+        
+        
+    }
+    
+    // .box-bottom-left{
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    // }
+
+    // .box-bottom_right{
+
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+
+    // }
     background-image: url(../../../public/images/main_bg.jpg);
     
     .boxbottomleft{
@@ -43,17 +69,21 @@
     p.display-4{
         padding: 0;
     }
-    .lineBell{
-        margin-top: -10px;
+    .titreOurStory{
+        background-image: url(../../../public/images/decoration_line.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 100%;
+        font-size: 3rem;
     }
+    
     .bord{
-        border-top: solid 2px rgba(199, 197, 197, 0.301);
-        border-left: solid 2px rgba(199, 197, 197, 0.301);
-        border-right: solid 2px rgba(199, 197, 197, 0.301);
+        border: solid 2px rgba(199, 197, 197, 0.301);
+        
     }
     .storylorem{
         line-height: 1.7;
-        margin: 0 18vw;
+        margin:  5% 25%;        
     }
     .lastbit{
         
@@ -64,22 +94,28 @@
 
     .menuList{
 
-        // border-bottom: solid 2px rgba(199, 197, 197, 0.301);
-        border-left: solid 2px rgba(199, 197, 197, 0.301);
-        border-right: solid 2px rgba(199, 197, 197, 0.301);
-       position: relative;
+        
+        position: relative;
+        // temp!!!
+        
    
-        div.col-3{
+        #listFood{
            
            margin: 0;
            padding: 0;
            border-right: solid 1px rgba(70, 70, 70, 0.479);
+           display: flex;
+           flex-direction: column;
+           flex: 3;
        }
+       
        .list-group{
    
            font-family: "Courgette";
            font-size: 2rem ;
            color: black;
+           
+        
            
            a{
    
@@ -89,17 +125,15 @@
                flex-direction: column;
                line-height: 2;
                border: none;
-               border-bottom:solid  rgba(199, 197, 197, 0.301) 1px; 
+               border-bottom:solid  rgba(87, 87, 87, 0.301) 1px; 
                border-right: solid 1px rgba(199, 197, 197, 0.301) ;
                border-right: solid white 7px ;
                background-color: white;
-               margin-left: 25px;
-               margin-right:0 ;
-               width: 18vw;
+               padding-top:20px;
+              
                i{
                    font-size: 4rem;
                }
-               padding-top:20px;
    
            }
    
@@ -143,9 +177,12 @@
            
        }
    
-       div.col-8{
+       div.col-lg-8, {
+
            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
            font-size: 15px;
+           
+        //    display: none;
            div.row.d-flex.flex-row{
                flex-wrap: nowrap;
                width: 100%;
@@ -172,5 +209,199 @@
            }
        }
     }   
+
+
+
+     
+       
+       
+
+    .card-body{
+         
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            
+         //    display: none;
+            // div.row.d-flex.flex-row{
+            // //     flex-wrap: nowrap;
+            //     width: 100%;
+            // }
+            
+            .strong{
+                font-weight: bold;;
+            }
+            .prix{
+                background-color: rgba(122, 122, 122, 0.342);
+                // width: 8vw;
+                color: $redChef;
+            }
+            img{
+                border: solid rgba(197, 197, 197, 0.678) 5px;
+                border-radius: 50%;
+                width: 100px;
+            }
+            .dash{
+                border-bottom: dashed rgba(117, 117, 117, 0.808) 1px;
+                // margin: 0 30px ;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                
+            }
+        
+    }
+
+
 }
+
+
+// LARGE SCREEN RESPONSIVE
+
+@media  screen and (min-width:1024px){
+
+    #accordion{
+        display: none;
+    }
     
+}
+
+
+// PHONE RESPONSIVE OUR STORY
+@media  screen and (max-width:720px) {
+    .boxbottomleft, .boxbottomright, .boxtopleft, .boxtopright{
+        display: none;
+    }
+    .ourStory{
+        padding: 0;
+        
+        .storylorem{
+            line-height: 1.7;
+            margin: 5% 10%;        
+        }
+    }
+
+    
+    
+
+    
+}
+
+
+// TABLET RESPONSIVE MENU LIST 
+
+@media  screen and (min-width:768px) and (max-width:1023px){
+    #accordion{
+        display: none;
+    }
+
+    .menuList{
+
+        .list-group{
+       
+            font-family: "Courgette";
+            font-size: 2rem ;
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            a:focus{
+                border-bottom: solid 7px $redChef;
+                border-right:none !important ;
+            }
+
+            
+            
+            
+        }
+        #listFood{
+            border-right: none !important ; 
+        
+        }
+
+        .tab-content{
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            // margin: auto;
+            // width: 100vw;
+            .col-6{
+                display: flex;
+                flex:2;
+                padding: 0;
+                
+            }
+
+        }
+    }
+    
+}
+
+
+// PHONE RESPONSIVE MENU LIST 
+
+@media  screen and (max-width:720px){
+    .card-body{
+        padding: 0;
+    }
+    #menuList{
+        display: none ;
+    }
+    .card-header:hover{
+        i{
+            color: $redChef;
+        }
+    }
+    .card-header{
+        // padding: 0 !important;
+        background-color: white !important;
+        .btn:hover{
+            text-decoration: none;
+            color: unset;
+        }
+        .btn:focus{
+            outline: none;
+            box-shadow: none;
+            
+        }
+        h5{
+            
+            // background-color: white;
+
+            button{
+
+                color: rgba(0, 0, 0, 0.797);
+                
+                
+               
+                
+                
+                p{
+                    font-size: 2rem ;
+                    text-decoration: none;
+                    
+                    
+                }
+                
+                i{
+                    font-size: 4rem;
+                    text-decoration: none;
+
+                    
+                }
+            }
+
+            button:focus{
+                border-bottom: solid 7px $redChef;
+                text-decoration: none;
+            }
+        }
+        
+
+    }
+    
+
+}
+
+

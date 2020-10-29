@@ -2,12 +2,12 @@ header{
     background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.815)),url(../../../public/images/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height:120vh;
+   
     nav{
         font-size: 15px;
         
         
-    };
+    }
     a{
         color: rgba(255, 255, 255, 0.788);
         text-decoration: none;
@@ -28,13 +28,31 @@ header{
         background-color:$redChef ;
 
     }
+    .navdrop{
+        a{
+            color: rgba(255, 255, 255, 0.788);
+            text-decoration: none;
+    
+        }
+    
+        a:hover{ 
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.788) ;
+            
+           
+        }
 
+
+
+    }
+
+    
     // carousel
-
+    
     .carouselDiv{
-        padding-top: 100px;
-        height: 90vh;
-
+        padding-top: 10%;
+      
+        
         h1{
             font-family: "Courgette";
             font-size: 50px;
@@ -44,40 +62,42 @@ header{
             }
         }
     }
-
+    
     ol.carousel-indicators{
         margin-top: 200px;
         padding-top: 100px;
     }
-
+    
     .carousel .carousel-indicators li {
         width: 10px;
-       height: 10px;
-       border-radius: 100%;
-     }
-     .carousel .carousel-indicators li::before{
-         content: "";
-         width: 15px;
-         height: 15px;
-         border: solid 1px white;
-         border-radius: 100%;
-     }
-     button:focus{
-         outline: none;
-     }
-     button{
-         border-radius: 20px;
-         border: none;
-         padding: 15px 20px;
-     }
-     button.text-light{
-         background-color: $redChef;
-     }
-
-     div.mt-5.but.d-flex.justify-content-center{
-         padding-bottom: 200px;
-     }
-}
+        height: 10px;
+        border-radius: 100%;
+    }
+    .carousel .carousel-indicators li::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: solid 1px white;
+        border-radius: 100%;
+    }
+    button:focus{
+        outline: none;
+    }
+    button{
+        border-radius: 20px;
+        border: none;
+        padding: 15px 20px;
+        margin: 2%;
+    }
+    button.text-light{
+        background-color: $redChef;
+    }
+    
+    div.mt-5.but.d-flex.justify-content-center{
+        padding-bottom: 200px;
+    }
+    
+} 
 
 
 .botDeco{
@@ -88,5 +108,47 @@ header{
     border: none;
     background-repeat: repeat-x;
     
+    
+}
 
+
+@media screen and (min-width:720px){
+    .navdrop{
+        display: none;
+    }
+}
+
+@media  screen and (max-width:720px){
+    .navmenu{
+
+        div{
+            display: none;
+        }
+    }
+    #carouselExampleIndicators{
+       h1{
+           font-size: 2rem;
+           span{
+            font-size: 2rem;
+           }
+
+       }
+    
+       .but{
+           display: flex;
+           flex-direction: column;
+           width: 60vw;
+           align-items: center;
+           justify-content: center;
+           button{
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               
+
+           }
+       }
+       
+    }
 }

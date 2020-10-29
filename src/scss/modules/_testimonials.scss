@@ -1,6 +1,18 @@
 .testi{
     font-family: "Courgette";
     background-image: url(../../../public/images/testimonials_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+     
+    .titreTesti{
+        background-image: url(../../../public/images/decoration_line.png);
+
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
 
     span.display-4{
         color: $redChef;
@@ -33,7 +45,7 @@
         img{
             border: solid rgba(172, 172, 172, 0.781) 4px;
             border-radius: 50%;
-            width: 50%;
+            width: 200px;
         }
     }
 
